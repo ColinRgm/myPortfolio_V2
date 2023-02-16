@@ -1,0 +1,132 @@
+/* -- Galerie ------------------------------------------------------------------------------------------------------  */
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: 200px;
+    vertical-align: center;
+    gap: 25px;
+    color: #453F3C;
+    width: 70%;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+}
+
+.grid-container img {
+    height: 200px;
+    width: 200px;
+}
+
+.grid-container h3 {
+    color: #FC7A1E;
+    margin-bottom: 20px;
+}
+
+
+/* -- Hockey -------------------------------------- */
+/* -- Texte -- */
+.hockey {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+
+    text-align: right;
+    padding-right: 25px;
+    border-right: #FC7A1E solid 2px;
+}
+
+/* -- Image -- */
+.hockeyImg {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+
+/* -- MMA -------------------------------------- */
+/* -- Texte -- */
+.mma {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+
+    padding-left: 25px;
+    border-left: #FC7A1E solid 2px;
+}
+
+/* -- Image -- */
+.mmaImg {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+
+/* -- Trip -------------------------------------- */
+/* -- Texte -- */
+.trip {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+
+    text-align: right;
+    padding-right: 25px;
+    border-right: #FC7A1E solid 2px;
+}
+
+/* -- Image -- */
+.tripImg {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.trip p ~ p {
+    margin-top: 15px;
+}
+
+
+/* -- Tattoo -------------------------------------- */
+/* -- Texte -- */
+.tattoo {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+
+    padding-left: 25px;
+    border-left: #FC7A1E solid 2px;
+}
+
+/* -- Image -- */
+.tattooImg {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+
+/* -- Developpement -------------------------------------- */
+/* -- Texte -- */
+.dev {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+
+    text-align: right;
+    padding-right: 25px;
+    border-right: #FC7A1E solid 2px;
+}
+
+/* -- Image -- */
+.devImg {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+}
+
+
+/* -- Alignement text -- */
+.hockey,
+.mma,
+.trip,
+.tattoo,
+.dev {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+

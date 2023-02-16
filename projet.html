@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mes projets</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="stylesheet/projet.css">
+</head>
+<body>
+
+
+<!-- NavBar ----------------------------------------------------------------------------------------------------------->
+<nav>
+    <a href="#" class="nav-item is-active"><strong>Projets</strong></a>
+    <a href="parcours.html" class="nav-item">Parcours</a>
+    <a href="index.html" class="nav-item">Accueil</a>
+    <a href="passion.html" class="nav-item">Passions</a>
+    <a href="contact.html" class="nav-item">Contact</a>
+    <span class="nav-indicator"></span>
+</nav>
+
+
+<!-- Slider ----------------------------------------------------------------------------------------------------------->
+<div class="projectBody">
+    <div class="slider">
+        <input type="radio" name="slider" id="item-1" checked>
+        <input type="radio" name="slider" id="item-2">
+        <input type="radio" name="slider" id="item-3">
+        <input type="radio" name="slider" id="item-4">
+
+
+        <!-- Cards ----------------------------------------------->
+        <div class="cards">
+
+            <!-- Tattoo Portfolio -->
+            <label class="card" for="item-1" id="project-1">
+                <a href="https://colinrgm.github.io/myTattooPortfolio" target="_blank">
+                    <img src="img/projects/projectOne.png"
+                         alt="project">
+                </a>
+            </label>
+
+            <!-- Tableau de Moyennes -->
+            <label class="card" for="item-2" id="project-2">
+                <a href="https://colinrgm.github.io/tableauDeMoyenne" target="_blank">
+                    <img src="img/projects/projectTwo.png"
+                         alt="project">
+                </a>
+            </label>
+
+            <!-- Futur app  -->
+            <label class="card" for="item-3" id="project-3">
+                <img src="img/projects/projectThree.png"
+                     alt="project">
+            </label>
+
+
+            <!--
+                <label class="card" for="item-4" id="project-4">
+                    <img src="img/mma.png" alt="project">
+                </label>
+            -->
+        </div>
+
+        <!-- Info du bas ---------------------------------------------------------------------------------------------->
+        <div class="projectImg">
+            <div class="upper-part">
+                <div class="info-area" id="test">
+
+                    <!-- Tattoo portfolio -------------------------------------->
+                    <label class="project-info" id="project-info-1">
+                        <!-- Titre -->
+                        <div class="title">
+                            <b>HTML / CSS</b>
+                        </div>
+
+                        <!-- Sous-titre -->
+                        <div class="sub-line">
+                            <div class="subtitle">
+                                Mon premier site web
+                            </div>
+                        </div>
+                    </label>
+
+                    <!-- Tableau de Moyennes ---------------------------------->
+                    <label class="project-info" id="project-info-2">
+                        <!-- Titre -->
+                        <div class="title">
+                            <b>HTML / CSS / JS</b>
+                        </div>
+
+                        <!-- Sous-titre -->
+                        <div class="sub-line">
+                            <div class="subtitle">Calculateur de moyenne en JavaScript</div>
+                        </div>
+                    </label>
+
+                    <!-- Futur app  ------------------------------------------->
+                    <label class="project-info" id="project-info-3">
+                        <!-- Titre -->
+                        <div class="title">
+                            <b>Figma</b>
+                        </div>
+                        <!-- Sous-titre -->
+                        <div class="sub-line">
+                            <div class="subtitle">Maquette pour un futur projet</div>
+                        </div>
+                    </label>
+
+                    <!--
+                        <label class="project-info" id="project-info-4">
+                            <div class="title">Test</div>
+                            <div class="sub-line">
+                                <div class="subtitle">Test 2.0</div>
+                            </div>
+                        </label>
+                    -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

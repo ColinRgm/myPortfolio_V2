@@ -1,0 +1,101 @@
+/* -- Conteneur général -- */
+.contenuParcours {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: auto;
+    margin-top: 150px;
+    width: max-content;
+    gap: 50px;
+}
+
+/* -- Titres colonnes */
+.titre {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    font-size: 23px;
+    text-align: right;
+    border-bottom: #FC7A1E 3px solid;
+}
+
+
+/* -- MON PARCOURS -- */
+.monParcours {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: max-content auto;
+    grid-template-rows: 60px repeat(6, max-content);
+    column-gap: 25px;
+}
+
+
+/* -- COMPETENCES INFORMATIQUE -- */
+.competencesInformatique {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: max-content auto;
+    grid-template-rows: 60px repeat(4, max-content);
+    column-gap: 25px;
+}
+
+
+/* Left */
+.date,
+.language {
+    text-align: right;
+    border-right: #FC7A1E solid 3px;
+    padding: 25px 25px 0 0;
+    font-size: 18px;
+    grid-column: 1 / 2;
+}
+
+/* -- Right -- */
+.lieu,
+.project {
+    padding: 25px 25px 10px 0;
+    font-size: 16px;
+    line-height: 1.7;
+
+}
+
+
+/* -- Styles annexes -- */
+strong {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* -- Responsive ---------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 1605px) {
+
+    .contenuParcours {
+        display: grid;
+        grid-template-columns: max-content;
+        grid-template-rows: auto auto;
+        align-content: center;
+        width: max-content;
+        gap: 50px;
+    }
+
+    /* -- MON PARCOURS -- */
+    .monParcours {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        display: grid;
+        grid-template-columns: max-content auto;
+        grid-template-rows: 60px repeat(6, max-content);
+        column-gap: 25px;
+    }
+
+    /* -- COMPETENCES INFORMATIQUE -- */
+    .competencesInformatique {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        display: grid;
+        grid-template-columns: max-content auto;
+        grid-template-rows: 60px repeat(4, max-content);
+        column-gap: 25px;
+    }
+}

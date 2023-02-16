@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="stylesheet/contact.css">
+
+    <title>Title</title>
+</head>
+<body>
+
+
+<!-- NavBar ----------------------------------------------------------------------------------------------------------->
+<nav>
+    <a href="projet.html" class="nav-item">Projets</a>
+    <a href="parcours.html" class="nav-item">Parcours</a>
+    <a href="index.html" class="nav-item">Accueil</a>
+    <a href="passion.html" class="nav-item">Passions</a>
+    <a href="#" class="nav-item is-active"><strong>Contact</strong></a>
+    <span class="nav-indicator"></span>
+</nav>
+
+
+<div class="container">
+    <!-- Contenu ---------------------------------------------------------------------------------------------------------->
+    <div class="contactPage">
+
+        <!-- Quelques info sur moi ---------------------------------------------------------------------------------------->
+        <div class="aboutMe">
+            <div>
+                <p><b>Colin</b> Regamey</p>
+                <p>Suisse, Vaud</p>
+                <p>23 ans</p>
+            </div>
+
+            <hr class="hrTop">
+            <div>
+                <p style="line-height: 23px">Je suis un jeune en deuxième année d'apprentissage<br>
+                    en tant qu'<b class="myJob">informaticien développement d'application</b>.</p>
+                <p>J'habite en Suisse dans le canton de Vaud.</p>
+            </div>
+            <hr class="hrBottom">
+
+            <div class="myLinks">
+                <a href="https://www.linkedin.com/in/colin-regamey-916710179/" target="_blank">
+                    <img src="img/svg/linkedin.svg" alt="linkedin" class="linkedin">
+                </a>
+
+                <a href="https://github.com/ColinRgm" target="_blank">
+                    <img src="img/svg/github.svg" alt="github" class="github">
+                </a>
+
+                <a href="docs/curriculumVitae.pdf" download>
+                    <button class="cv"><b>Télécharger mon CV</b></button>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Formulaire de contact ------------------------------------------------------------------------------------>
+        <form method="POST" action="#">
+            <div class="myForm">
+                <div class="name">
+                    <label for="name">Prénom</label>
+                    <input aria-label="name" type="text" id="name" name="name" placeholder="" required/>
+                </div>
+
+                <div class="lastname">
+                    <label for="lastname">Nom</label>
+                    <input aria-label="lastname" type="text" id="lastname" name="lastname" placeholder="" required/>
+                </div>
+
+                <div class="email">
+                    <label for="email">E-Mail</label>
+                    <input aria-label="email" type="text" id="email" name="email" placeholder="" required/>
+                </div>
+
+                <div class="subject">
+                    <label for="subject">Sujet</label>
+                    <input type="text" aria-label="subject" id="subject" name="subject" placeholder="" required>
+                </div>
+
+
+                <div class="message">
+                    <label for="message">Votre message</label>
+                    <textarea aria-label="message" id="message" name="message" placeholder="" required></textarea>
+                </div>
+
+                <input id="button" name="submit" type="submit" value="Envoyer"/>
+
+                <div class="g-recaptcha brochure__form__captcha"
+                     data-sitekey="6Ldsi-8jAAAAAA2n9e22b91JJxvnrJQCCuNhDGoA"></div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
