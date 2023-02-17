@@ -1,148 +1,107 @@
 /* -- Slider -------------------------------------------------------------------------------------------------------- */
-.projectBody {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 10px;
+.containerSlider {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  width: 100%;
+  max-width: 1200px;
+  margin: 150px auto;
 }
 
-input[type=radio] {
-    display: none;
+.c-header {
+  display: block;
+  width: 100%;
 }
 
-.card {
-    position: absolute;
-    width: 80%;
-    height: 80%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transition: transform .4s ease;
-    cursor: pointer;
+.u-a5 {
+  font-size: 37px;
+  line-height: 35px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  color: #fff;
 }
 
-.slider {
-    width: 100%;
-    max-width: 800px;
-    max-height: 600px;
-    height: 100%;
-    transform-style: preserve-3d;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.u-b4 {
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0.3px;
+  font-weight: normal;
+  color: #fff;
 }
 
-.cards {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 20px;
+a {
+  text-decoration: none;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
+.u-media-wrapper {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 0;
 }
 
-#item-1:checked ~ .cards #project-3,
-#item-2:checked ~ .cards #project-1,
-#item-3:checked ~ .cards #project-2
-    /* #item-4:checked ~ .cards #project-3 */
-{
-    transform: translatex(-40%) scale(.8);
-    opacity: .4;
-    z-index: 0;
+.u-media-wrapper.u-media-wrapper--16-9 {
+  padding-bottom: 56.25%;
 }
 
-#item-1:checked ~ .cards #project-2,
-#item-2:checked ~ .cards #project-3,
-#item-3:checked ~ .cards #project-1
-    /* #item-4:checked ~ .cards #project-1 */
-{
-    transform: translatex(40%) scale(.8);
-    opacity: .4;
-    z-index: 0;
+.c-gradient-overlay {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 49% 50%, rgba(2, 21, 25, 0.3), rgba(2, 21, 25, 0.6));
 }
 
-#item-1:checked ~ .cards #project-1,
-#item-2:checked ~ .cards #project-2,
-#item-3:checked ~ .cards #project-3
-    /* #item-4:checked ~ .cards #project-4 */
-{
-    transform: translatex(0) scale(1);
-    opacity: 1;
-    z-index: 1;
+.c-mouse-vertical-carousel {
+  position: relative;
+  overflow: hidden;
 }
 
-img {
-    box-shadow: 0 0 5px 0 rgba(81, 81, 81, 0.47);
+.c-mouse-vertical-carousel__list {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 1;
 }
 
-
-.projectImg {
-    border-radius: 8px;
-    min-width: 320px;
-    padding: 16px 10px;
-    background-color: #453F3C;
-    box-shadow: 0 0 5px 0 rgba(81, 81, 81, 0.47);
+.c-mouse-vertical-carousel__list-item a {
+  display: block;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-left: 54.1666666667%;
 }
 
-.upper-part {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
-    height: 60px;
-    overflow: hidden;
+.c-mouse-vertical-carousel__eyebrow {
+  position: relative;
+  padding-bottom: 12px;
 }
 
-.project-info {
-    width: calc(100% - 32px);
-    display: block;
+.c-mouse-vertical-carousel__eyebrow span {
+  position: absolute;
+  left: -30px;
+  top: 2px;
 }
 
-.project-info .title {
-    color: #FC7A1E;
-    font-size: 14px;
-    line-height: 24px;
+.c-mouse-vertical-carousel__title {
+  max-width: 450px;
 }
 
-.sub-line {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.subtitle, .time {
-    font-size: 12px;
-    line-height: 16px;
-    color: #DADADA;
-}
-
-.info-area {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 30px;
-    transition: transform .4s ease-in;
-}
-
-#item-2:checked ~ .projectImg #test {
-    transform: translateY(0);
-}
-
-#item-2:checked ~ .projectImg #test {
-    transform: translateY(-40px);
-}
-
-#item-3:checked ~ .projectImg #test {
-    transform: translateY(-80px);
-}
-
-#item-4:checked ~ .projectImg #test {
-    transform: translateY(-120px);
+.c-mouse-vertical-carousel__bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
 }

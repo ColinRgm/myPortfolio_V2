@@ -39,6 +39,10 @@
     column-gap: 25px;
 }
 
+li {
+    margin-left: 40px;
+}
+
 
 /* Left */
 .date,
@@ -68,7 +72,7 @@ strong {
 
 
 /* -- Responsive ---------------------------------------------------------------------------------------------------- */
-@media only screen and (max-width: 1605px) {
+@media only screen and (max-width: 1700px) {
 
     .contenuParcours {
         display: grid;
@@ -76,7 +80,9 @@ strong {
         grid-template-rows: auto auto;
         align-content: center;
         width: max-content;
-        gap: 50px;
+        gap: 100px;
+        margin-bottom: 50px;
+
     }
 
     /* -- MON PARCOURS -- */

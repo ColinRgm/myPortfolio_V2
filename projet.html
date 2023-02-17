@@ -2,9 +2,11 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mes projets</title>
+
     <link rel="stylesheet" href="stylesheet/style.css">
     <link rel="stylesheet" href="stylesheet/projet.css">
+
+	    <title>Mes projets</title>
 </head>
 <body>
 
@@ -21,106 +23,57 @@
 
 
 <!-- Slider ----------------------------------------------------------------------------------------------------------->
-<div class="projectBody">
-    <div class="slider">
-        <input type="radio" name="slider" id="item-1" checked>
-        <input type="radio" name="slider" id="item-2">
-        <input type="radio" name="slider" id="item-3">
-        <input type="radio" name="slider" id="item-4">
+<div class="containerSlider">
+	<div class="c-header c-header--archive c-header--project-list">
+		<div class="c-mouse-vertical-carousel js-carousel u-media-wrapper u-media-wrapper--16-9">
+			<ul class="c-mouse-vertical-carousel__list js-carousel-list">
+				<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="0">
+					<a href="">
+						<p class="c-mouse-vertical-carousel__eyebrow u-b4">
+							<span>01</span> Mon premier site web
+						</p>
 
+						<p class="c-mouse-vertical-carousel__title u-a5">
+							HTML/CSS
+						</p>
+					</a>
+				</li>
 
-        <!-- Cards ----------------------------------------------->
-        <div class="cards">
+				<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="1">
+					<a href="">
+						<p class="c-mouse-vertical-carousel__eyebrow u-b4">
+							<span>02</span> Calculateur de moyennes
+						</p>
 
-            <!-- Tattoo Portfolio -->
-            <label class="card" for="item-1" id="project-1">
-                <a href="https://colinrgm.github.io/myTattooPortfolio" target="_blank">
-                    <img src="img/projects/projectOne.png"
-                         alt="project">
-                </a>
-            </label>
+						<p class="c-mouse-vertical-carousel__title u-a5">
+							HTML/CSS/JS
+						</p>
+					</a>
+				</li>
 
-            <!-- Tableau de Moyennes -->
-            <label class="card" for="item-2" id="project-2">
-                <a href="https://colinrgm.github.io/tableauDeMoyenne" target="_blank">
-                    <img src="img/projects/projectTwo.png"
-                         alt="project">
-                </a>
-            </label>
+				<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="2">
+					<a href="#">
+						<p class="c-mouse-vertical-carousel__eyebrow u-b4">
+							<span>03</span> Maquette pour un futur projet
+						</p>
 
-            <!-- Futur app  -->
-            <label class="card" for="item-3" id="project-3">
-                <img src="img/projects/projectThree.png"
-                     alt="project">
-            </label>
+						<p class="c-mouse-vertical-carousel__title u-a5">
+							Figma
+						</p>
+					</a>
+				</li>
+			</ul>
 
+			<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('img/projects/projectOne.png')"></i>
+			<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('img/projects/projectTwo.png')"></i>
+			<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('img/projects/projectThree.png')"></i>
 
-            <!--
-                <label class="card" for="item-4" id="project-4">
-                    <img src="img/mma.png" alt="project">
-                </label>
-            -->
-        </div>
-
-        <!-- Info du bas ---------------------------------------------------------------------------------------------->
-        <div class="projectImg">
-            <div class="upper-part">
-                <div class="info-area" id="test">
-
-                    <!-- Tattoo portfolio -------------------------------------->
-                    <label class="project-info" id="project-info-1">
-                        <!-- Titre -->
-                        <div class="title">
-                            <b>HTML / CSS</b>
-                        </div>
-
-                        <!-- Sous-titre -->
-                        <div class="sub-line">
-                            <div class="subtitle">
-                                Mon premier site web
-                            </div>
-                        </div>
-                    </label>
-
-                    <!-- Tableau de Moyennes ---------------------------------->
-                    <label class="project-info" id="project-info-2">
-                        <!-- Titre -->
-                        <div class="title">
-                            <b>HTML / CSS / JS</b>
-                        </div>
-
-                        <!-- Sous-titre -->
-                        <div class="sub-line">
-                            <div class="subtitle">Calculateur de moyenne en JavaScript</div>
-                        </div>
-                    </label>
-
-                    <!-- Futur app  ------------------------------------------->
-                    <label class="project-info" id="project-info-3">
-                        <!-- Titre -->
-                        <div class="title">
-                            <b>Figma</b>
-                        </div>
-                        <!-- Sous-titre -->
-                        <div class="sub-line">
-                            <div class="subtitle">Maquette pour un futur projet</div>
-                        </div>
-                    </label>
-
-                    <!--
-                        <label class="project-info" id="project-info-4">
-                            <div class="title">Test</div>
-                            <div class="sub-line">
-                                <div class="subtitle">Test 2.0</div>
-                            </div>
-                        </label>
-                    -->
-                </div>
-            </div>
-        </div>
-    </div>
+			<i class="c-gradient-overlay"></i>
+		</div>
+	</div>
 </div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script><script  src="script.js"></script>
 
-<script src="script.js"></script>
 </body>
 </html>

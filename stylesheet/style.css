@@ -44,9 +44,8 @@ a {
     position: absolute;
     bottom: -6px;
     background-color: transparent;
-    height: 5px;
+    height: 3px;
     width: 100%;
-    border-radius: 8px 8px 0 0;
     left: 0;
     transition: .3s;
     color: transparent;
@@ -63,7 +62,6 @@ a {
     bottom: 0;
     height: 5px;
     transition: .4s;
-    border-radius: 8px 8px 0 0;
 }
 
 
